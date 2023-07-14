@@ -57,8 +57,8 @@
               <source
                 srcset="./assets/images/beam/beam-template-800@2x.jpg 2x, ./assets/images/beam/beam-template-800.jpg" />
               <img src="./assets/images/beam/beam-template-800@2x.jpg"
-                alt="Screenshot of usage feature in Beam dashboard" class="project-card__img" loading="lazy" width="800"
-                height="480">
+                alt="Screenshot of usage feature in Beam dashboard"
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--about project-card--half project-card--beam">
@@ -109,7 +109,7 @@
             <picture>
               <source srcset="./assets/images/beam/beam-usage-800@2x.jpg 2x, ./assets/images/beam/beam-usage-800.jpg" />
               <img src="./assets/images/beam/beam-usage-800@2x.jpg" alt="Screenshot of usage feature in Beam dashboard"
-                class="project-card__img" loading="lazy" width="800" height="480">
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--beam">
@@ -133,14 +133,14 @@
               <source
                 srcset="./assets/images/beam/beam-empty-state-800@2x.jpg 2x, ./assets/images/beam/beam-empty-state-800.jpg" />
               <img src="./assets/images/beam/beam-empty-state-800@2x.jpg" alt="Screenshot of guide in Beam dashboard"
-                class="project-card__img" loading="lazy" width="800" height="480">
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--half project-card--overflow-right project-card--beam">
             <picture>
               <source srcset="./assets/images/beam/beam-guide-800@2x.jpg 2x, ./assets/images/beam/beam-guide-800.jpg" />
               <img src="./assets/images/beam/beam-guide-800@2x.jpg" alt="Screenshot of guide in Beam dashboard"
-                class="project-card__img" loading="lazy" width="800" height="480">
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--beam">
@@ -185,8 +185,8 @@
               <source
                 srcset="./assets/images/flok/flok-activity-800@2x.jpg 2x, ./assets/images/flok/flok-activity-800.jpg" />
               <img src="./assets/images/flok/flok-activity-800@2x.jpg"
-                alt="Screenshot of activity feature in Flok dashboard" class="project-card__img" width="800"
-                height="480">
+                alt="Screenshot of activity feature in Flok dashboard"
+                class="project-card__img project-card__img--fixed-height" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--about project-card--half project-card--flok">
@@ -303,8 +303,8 @@
             <picture>
               <source srcset="./assets/images/beam-web/about-800@2x.jpg 2x, ./assets/images/beam-web/about-800.jpg" />
               <img src="./assets/images/beam-web/about-800@2x.jpg"
-                alt="Screenshot of the about section of the Beam landing page" class="project-card__img" width="800"
-                height="480">
+                alt="Screenshot of the about section of the Beam landing page"
+                class="project-card__img project-card__img--fixed-height" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--about project-card--half project-card--beam">
@@ -344,21 +344,33 @@
           <div class="project-card project-card--columns project-card--beam">
             <picture>
               <source
-                srcset="./assets/images/beam-web/mobile-production-768@2x.jpg 2x, ./assets/images/beam-web/mobile-production-768.jpg" />
+                srcset="./assets/images/beam-web/mobile-production-768@2x.jpg 2x, ./assets/images/beam-web/mobile-production-768.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/beam-web/mobile-production-400@2x.jpg 2x, ./assets/images/beam-web/mobile-production-400.jpg"
+                media="(max-width: 1024px)" />
               <img src="./assets/images/beam-web/mobile-production-768@2x.jpg"
                 alt="Screenshot of the pricing section of the Beam landing page" class="project-card__img" width="381"
                 height="768">
             </picture>
             <picture>
               <source
-                srcset="./assets/images/beam-web/mobile-storage-768@2x.jpg 2x, ./assets/images/beam-web/mobile-storage-768.jpg" />
+                srcset="./assets/images/beam-web/mobile-storage-768@2x.jpg 2x, ./assets/images/beam-web/mobile-storage-768.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/beam-web/mobile-storage-400@2x.jpg 2x, ./assets/images/beam-web/mobile-storage-400.jpg"
+                media="(max-width: 1024px)" />
               <img src="./assets/images/beam-web/mobile-storage-768@2x.jpg"
                 alt="Screenshot of the pricing section of the Beam landing page" class="project-card__img" width="381"
                 height="768">
             </picture>
             <picture>
               <source
-                srcset="./assets/images/beam-web/mobile-testimonials-768@2x.jpg 2x, ./assets/images/beam-web/mobile-testimonials-768.jpg" />
+                srcset="./assets/images/beam-web/mobile-testimonials-768@2x.jpg 2x, ./assets/images/beam-web/mobile-testimonials-768.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/beam-web/mobile-testimonials-400@2x.jpg 2x, ./assets/images/beam-web/mobile-testimonials-400.jpg"
+                media="(max-width: 1024px)" />
               <img src="./assets/images/beam-web/mobile-testimonials-768@2x.jpg"
                 alt="Screenshot of the pricing section of the Beam landing page" class="project-card__img" width="381"
                 height="768">
@@ -384,14 +396,14 @@
             <picture>
               <source srcset="./assets/images/beam-web/plans-800@2x.jpg 2x, ./assets/images/beam-web/plans-800.jpg" />
               <img src="./assets/images/beam-web/plans-800@2x.jpg" alt="Screenshot of usage feature in Beam dashboard"
-                class="project-card__img" loading="lazy" width="800" height="480">
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--half project-card--overflow-right project-card--beam">
             <picture>
               <source srcset="./assets/images/beam-web/cta-800@2x.jpg 2x, ./assets/images/beam-web/cta-800.jpg" />
               <img src="./assets/images/beam-web/cta-800@2x.jpg" alt="Screenshot of usage feature in Beam dashboard"
-                class="project-card__img" loading="lazy" width="800" height="480">
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--beam">
@@ -435,7 +447,7 @@
             <picture>
               <source srcset="./assets/images/tantl/tables-800@2x.jpg 2x, ./assets/images/tantl/tables-800.jpg" />
               <img src="./assets/images/tantl/tables-800@2x.jpg" alt="Screenshot of tables toolbar in Tantl dashboard"
-                class="project-card__img" loading="lazy" width="800" height="480">
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--about project-card--half project-card--tantl">
@@ -483,8 +495,8 @@
               <source
                 srcset="./assets/images/tantl/resource-dropdown-800@2x.jpg 2x, ./assets/images/tantl/resource-dropdown-800.jpg" />
               <img src="./assets/images/tantl/resource-dropdown-800@2x.jpg"
-                alt="Screenshot of tables toolbar in Tantl dashboard" class="project-card__img" loading="lazy"
-                width="800" height="480">
+                alt="Screenshot of tables toolbar in Tantl dashboard"
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--tantl">
@@ -507,15 +519,15 @@
               <source
                 srcset="./assets/images/tantl/copilot-access-800@2x.jpg 2x, ./assets/images/tantl/copilot-access-800.jpg" />
               <img src="./assets/images/tantl/copilot-access-800@2x.jpg"
-                alt="Screenshot of resource dropdown in Tantl dashboard" class="project-card__img" loading="lazy"
-                width="800" height="480">
+                alt="Screenshot of resource dropdown in Tantl dashboard"
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
           <div class="project-card project-card--half project-card--overflow-right project-card--tantl">
             <picture>
               <source srcset="./assets/images/tantl/alert-800@2x.jpg 2x, ./assets/images/tantl/alert-800.jpg" />
               <img src="./assets/images/tantl/alert-800@2x.jpg" alt="Screenshot of alert feature in Tantl dashboard"
-                class="project-card__img" loading="lazy" width="800" height="480">
+                class="project-card__img project-card__img--fixed-height" loading="lazy" width="800" height="480">
             </picture>
           </div>
         </div>

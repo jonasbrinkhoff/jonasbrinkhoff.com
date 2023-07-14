@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -595,9 +596,9 @@
     const callback = (entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          document.querySelector(".island-project-name").textContent = entry.target.dataset.projectName
-          document.querySelector(".island-project-type").textContent = entry.target.dataset.projectType
-          document.querySelector(".island-project-year").textContent = entry.target.dataset.projectYear
+          document.querySelector(".island__project-name").textContent = entry.target.dataset.projectName
+          document.querySelector(".island__project-type").textContent = entry.target.dataset.projectType
+          document.querySelector(".island__project-year").textContent = entry.target.dataset.projectYear
         }
       });
     };

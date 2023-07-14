@@ -1,82 +1,631 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="Jonas Brinkhoff is an independent product designer and (occasional) developer helping startups to shape, build, and scale their digital products."
-    />
-    <title>Jonas Brinkhoff — Product Designer and Developer</title>
-    <link
-      rel="preload"
-      href="assets/fonts/RecklessNeue-Book.woff2"
-      as="font"
-      type="font/woff2"
-    />
-    <link
-      rel="preload"
-      href="assets/fonts/RecklessNeue-BookItalic.woff2"
-      as="font"
-      type="font/woff2"
-    />
-    <link
-      rel="preload"
-      href="assets/fonts/HelveticaNeue-Regular.woff2"
-      as="font"
-      type="font/woff2"
-    />
-    <link rel="stylesheet" href="main.css" />
-  </head>
-  <body>
-    <main>
-      <header>
-        <h1>
-          <em>Jonas Brinkhoff</em> is an independent
-          <em>product designer</em> and <i>(occasional)</i>
-          <em>developer</em> helping startups to shape, build, and scale their
-          <em>digital products</em>.
-        </h1>
-      </header>
+<html lang="en">
 
-      <footer>
-        <h2><em>Want to talk?</em></h2>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Freelance product designer helping early-stage startups to from 0 to 1">
+  <title>Jonas Brinkhoff · Freelance Product Designer</title>
+  <link rel="preload" href="assets/fonts/RecklessNeue-Book.woff2" as="font" type="font/woff2">
+  <link rel="preload" href="assets/fonts/HelveticaNeue-Regular.woff2" as="font" type="font/woff2">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <a href="#hero">Jonas Brinkhoff</a>
+      <nav class="links">
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1>
+          Freelance <span class="font-sans">digital product designer</span> helping early-stage <span
+            class="font-sans">startups</span> to get from <span class="counter">0 -&gt; <span
+              class="counter__number">1</span></span>
+        </h1>
+        <h2>
+          UX Design · UI Design · Design Systems · Product Strategy
+        </h2>
+      </div>
+    </section>
+    <section class="projects">
+      <div class="container">
+        <!-- Beam -->
+        <div class="project" data-project-name="Beam" data-project-type="Product Design"
+          data-project-year="2022 – Present">
+          <div class="project-card project-card--beam">
+            <picture>
+              <source srcset="./assets/images/beam/beam-apps-1280@2x.jpg 2x, ./assets/images/beam/beam-apps-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source srcset="./assets/images/beam/beam-apps-896@2x.jpg 2x, ./assets/images/beam/beam-apps-896.jpg"
+                media="(min-width: 640px)" />
+              <source srcset="./assets/images/beam/beam-apps-576@2x.jpg 2x, ./assets/images/beam/beam-apps-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/beam/beam-apps-1280@2x.jpg" alt="Screenshot of app overview in Beam dashboard"
+                class="project-card__img" width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--beam">
+            <picture>
+              <source
+                srcset="./assets/images/beam/beam-template-800@2x.jpg 2x, ./assets/images/beam/beam-template-800.jpg" />
+              <img src="./assets/images/beam/beam-template-800@2x.jpg"
+                alt="Screenshot of usage feature in Beam dashboard" class="project-card__img" loading="lazy" width="800"
+                height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--about project-card--half project-card--beam">
+            <div>
+              <p class="project-card__heading">About</p>
+              <p class="project-card__text">Beam (YC W22) is an infrastructure platform that enables developers to
+                build AI projects using just a few lines of code. I've been responsible for the design of their product,
+                design system, and landing page since day one.</p>
+            </div>
+            <div>
+              <p class="project-card__heading">Type</p>
+              <p class="project-card__text">Product Design</p>
+            </div>
+            <div>
+              <p class="project-card__heading">Year</p>
+              <p class="project-card__text">2022 – Present</p>
+            </div>
+          </div>
+          <div class="project-card project-card--beam">
+            <picture>
+              <source
+                srcset="./assets/images/beam/beam-apps-overview-1280@2x.jpg 2x, ./assets/images/beam/beam-apps-overview-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/beam/beam-apps-overview-896@2x.jpg 2x, ./assets/images/beam/beam-apps-overview-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/beam/beam-apps-overview-576@2x.jpg 2x, ./assets/images/beam/beam-apps-overview-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/beam/beam-apps-overview-1280@2x.jpg"
+                alt="Screenshot of app detail page in Beam dashboard" class="project-card__img" loading="lazy"
+                width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--quote project-card--half project-card--beam">
+            <p class="project-card__text">“If you're building a technical product, Jonas is one of the best designers
+              you'll find. He designs thoughtful and simple workflows for complex problems. We worked together to
+              build
+              an MVP, bring a product to market, and build a design system, and Jonas was with us every step of the
+              way.
+              Working with Jonas was truly one of the best decisions we made in building our product.”</p>
+            <div>
+              <p class="project-card__author">Eli Mernit</p>
+              <p class="project-card__job">Co-Founder & CEO @ Beam</p>
+            </div>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--beam">
+            <picture>
+              <source srcset="./assets/images/beam/beam-usage-800@2x.jpg 2x, ./assets/images/beam/beam-usage-800.jpg" />
+              <img src="./assets/images/beam/beam-usage-800@2x.jpg" alt="Screenshot of usage feature in Beam dashboard"
+                class="project-card__img" loading="lazy" width="800" height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--beam">
+            <picture>
+              <source
+                srcset="./assets/images/beam/beam-onboarding-1280@2x.jpg 2x, ./assets/images/beam/beam-onboarding-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/beam/beam-onboarding-896@2x.jpg 2x, ./assets/images/beam/beam-onboarding-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/beam/beam-onboarding-576@2x.jpg 2x, ./assets/images/beam/beam-onboarding-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/beam/beam-onboarding-1280@2x.jpg"
+                alt="Screenshot of onboarding in Beam dashboard" class="project-card__img" loading="lazy" width="1280"
+                height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--beam">
+            <picture>
+              <source
+                srcset="./assets/images/beam/beam-empty-state-800@2x.jpg 2x, ./assets/images/beam/beam-empty-state-800.jpg" />
+              <img src="./assets/images/beam/beam-empty-state-800@2x.jpg" alt="Screenshot of guide in Beam dashboard"
+                class="project-card__img" loading="lazy" width="800" height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--beam">
+            <picture>
+              <source srcset="./assets/images/beam/beam-guide-800@2x.jpg 2x, ./assets/images/beam/beam-guide-800.jpg" />
+              <img src="./assets/images/beam/beam-guide-800@2x.jpg" alt="Screenshot of guide in Beam dashboard"
+                class="project-card__img" loading="lazy" width="800" height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--beam">
+            <picture>
+              <source
+                srcset="./assets/images/beam/beam-design-system-1280@2x.jpg 2x, ./assets/images/beam/beam-design-system-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/beam/beam-design-system-896@2x.jpg 2x, ./assets/images/beam/beam-design-system-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/beam/beam-design-system-576@2x.jpg 2x, ./assets/images/beam/beam-design-system-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/beam/beam-design-system-1280@2x.jpg"
+                alt="Screenshot of Beam design system components" class="project-card__img" loading="lazy" width="1280"
+                height="768">
+            </picture>
+          </div>
+        </div>
+
+        <!-- Flok -->
+        <div class="project" data-project-name="Flok" data-project-type="Product Design"
+          data-project-year="2022 – Present">
+          <div class="project-card project-card--flok">
+            <picture>
+              <source
+                srcset="./assets/images/flok/flok-attendees-1280@2x.jpg 2x, ./assets/images/flok/flok-attendees-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/flok/flok-attendees-896@2x.jpg 2x, ./assets/images/flok/flok-attendees-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/flok/flok-attendees-576@2x.jpg 2x, ./assets/images/flok/flok-attendees-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/flok/flok-attendees-1280@2x.jpg"
+                alt="Screenshot of attendees feature in Flok dashboard" class="project-card__img" loading="lazy"
+                width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--flok">
+            <picture>
+              <source
+                srcset="./assets/images/flok/flok-activity-800@2x.jpg 2x, ./assets/images/flok/flok-activity-800.jpg" />
+              <img src="./assets/images/flok/flok-activity-800@2x.jpg"
+                alt="Screenshot of activity feature in Flok dashboard" class="project-card__img" width="800"
+                height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--about project-card--half project-card--flok">
+            <div>
+              <p class="project-card__heading">About</p>
+              <p class="project-card__text">Flok (YC W21) provides an end-to-end planning service for corporate events.
+                In close collaboration with their team, I've established a new visual language, built a design
+                system, and completely redesigned their app to enhance the user experience.</p>
+            </div>
+            <div>
+              <p class="project-card__heading">Type</p>
+              <p class="project-card__text">Product Design</p>
+            </div>
+            <div>
+              <p class="project-card__heading">Year</p>
+              <p class="project-card__text">2022 – Present</p>
+            </div>
+          </div>
+          <div class="project-card project-card--flok">
+            <picture>
+              <source
+                srcset="./assets/images/flok/flok-itinerary-1280@2x.jpg 2x, ./assets/images/flok/flok-itinerary-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/flok/flok-itinerary-896@2x.jpg 2x, ./assets/images/flok/flok-itinerary-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/flok/flok-itinerary-576@2x.jpg 2x, ./assets/images/flok/flok-itinerary-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/flok/flok-itinerary-1280@2x.jpg"
+                alt="Screenshot of itinerary feature in Flok dashboard" class="project-card__img" loading="lazy"
+                width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--quote project-card--half project-card--flok">
+            <p class="project-card__text">“I have worked with other UI/UX designers and agencies in the past, and none
+              of them come close to Jonas' speed and quality of work. Jonas is highly communicative, can take an idea
+              and run with it, and is excellent at what he does. We are very happy customers!”</p>
+            <div>
+              <p class="project-card__author">Harris Stolzenberg</p>
+              <p class="project-card__job">Co-Founder & CEO @ Flok</p>
+            </div>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--flok">
+            <picture>
+              <source
+                srcset="./assets/images/flok/flok-reports-800@2x.jpg 2x, ./assets/images/flok/flok-reports-800.jpg" />
+              <img src="./assets/images/flok/flok-reports-800@2x.jpg"
+                alt="Screenshot of reports feature in Flok dashboard" class="project-card__img" width="800"
+                height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--flok">
+            <picture>
+              <source srcset="./assets/images/flok/flok-tasks-1280@2x.jpg 2x, ./assets/images/flok/flok-tasks-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source srcset="./assets/images/flok/flok-tasks-896@2x.jpg 2x, ./assets/images/flok/flok-tasks-896.jpg"
+                media="(min-width: 640px)" />
+              <source srcset="./assets/images/flok/flok-tasks-576@2x.jpg 2x, ./assets/images/flok/flok-tasks-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/flok/flok-tasks-1280@2x.jpg" alt="Screenshot of tasks feature in Flok dashboard"
+                class="project-card__img" loading="lazy" width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--flok">
+            <picture>
+              <source
+                srcset="./assets/images/flok/flok-site-builder-1280@2x.jpg 2x, ./assets/images/flok/flok-site-builder-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/flok/flok-site-builder-896@2x.jpg 2x, ./assets/images/flok/flok-site-builder-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/flok/flok-site-builder-576@2x.jpg 2x, ./assets/images/flok/flok-site-builder-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/flok/flok-site-builder-1280@2x.jpg"
+                alt="Screenshot of site builder feature in Flok dashboard" class="project-card__img" loading="lazy"
+                width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--flok">
+            <picture>
+              <source
+                srcset="./assets/images/flok/flok-design-system-1280@2x.jpg 2x, ./assets/images/flok/flok-design-system-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/flok/flok-design-system-896@2x.jpg 2x, ./assets/images/flok/flok-design-system-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/flok/flok-design-system-576@2x.jpg 2x, ./assets/images/flok/flok-design-system-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/flok/flok-design-system-1280@2x.jpg"
+                alt="Screenshot of Flok design system components" class="project-card__img" loading="lazy" width="1280"
+                height="768">
+            </picture>
+          </div>
+        </div>
+
+        <!-- Beam Web -->
+        <div class="project" data-project-name="Beam" data-project-type="Web Design" data-project-year="2023">
+          <div class="project-card project-card--beam">
+            <picture>
+              <source srcset="./assets/images/beam-web/hero-1280@2x.jpg 2x, ./assets/images/beam-web/hero-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source srcset="./assets/images/beam-web/hero-896@2x.jpg 2x, ./assets/images/beam-web/hero-896.jpg"
+                media="(min-width: 640px)" />
+              <source srcset="./assets/images/beam-web/hero-576@2x.jpg 2x, ./assets/images/beam-web/hero-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/beam-web/hero-1280@2x.jpg" alt="Screenshot of the hero of the Beam landing page"
+                class="project-card__img" loading="lazy" width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--beam">
+            <picture>
+              <source srcset="./assets/images/beam-web/about-800@2x.jpg 2x, ./assets/images/beam-web/about-800.jpg" />
+              <img src="./assets/images/beam-web/about-800@2x.jpg"
+                alt="Screenshot of the about section of the Beam landing page" class="project-card__img" width="800"
+                height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--about project-card--half project-card--beam">
+            <div>
+              <p class="project-card__heading">About</p>
+              <p class="project-card__text">
+                In early 2023, I've redesigned the landing page for Beam. Our goal was to create a
+                visually captivating experience that effectively showcases the product. It was a lot of fun to fine-tune
+                each and every tiny element.
+              </p>
+            </div>
+            <div>
+              <p class="project-card__heading">Type</p>
+              <p class="project-card__text">Web Design</p>
+            </div>
+            <div>
+              <p class="project-card__heading">Year</p>
+              <p class="project-card__text">2023</p>
+            </div>
+          </div>
+          <div class="project-card project-card--beam">
+            <picture>
+              <source
+                srcset="./assets/images/beam-web/run-on-cloud-1280@2x.jpg 2x, ./assets/images/beam-web/run-on-cloud-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/beam-web/run-on-cloud-896@2x.jpg 2x, ./assets/images/beam-web/run-on-cloud-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/beam-web/run-on-cloud-576@2x.jpg 2x, ./assets/images/beam-web/run-on-cloud-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/beam-web/run-on-cloud-1280@2x.jpg"
+                alt="Screenshot of the hero of the Beam landing page" class="project-card__img" loading="lazy"
+                width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--columns project-card--beam">
+            <picture>
+              <source
+                srcset="./assets/images/beam-web/mobile-production-768@2x.jpg 2x, ./assets/images/beam-web/mobile-production-768.jpg" />
+              <img src="./assets/images/beam-web/mobile-production-768@2x.jpg"
+                alt="Screenshot of the pricing section of the Beam landing page" class="project-card__img" width="381"
+                height="768">
+            </picture>
+            <picture>
+              <source
+                srcset="./assets/images/beam-web/mobile-storage-768@2x.jpg 2x, ./assets/images/beam-web/mobile-storage-768.jpg" />
+              <img src="./assets/images/beam-web/mobile-storage-768@2x.jpg"
+                alt="Screenshot of the pricing section of the Beam landing page" class="project-card__img" width="381"
+                height="768">
+            </picture>
+            <picture>
+              <source
+                srcset="./assets/images/beam-web/mobile-testimonials-768@2x.jpg 2x, ./assets/images/beam-web/mobile-testimonials-768.jpg" />
+              <img src="./assets/images/beam-web/mobile-testimonials-768@2x.jpg"
+                alt="Screenshot of the pricing section of the Beam landing page" class="project-card__img" width="381"
+                height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--beam">
+            <picture>
+              <source
+                srcset="./assets/images/beam-web/ship-in-hours-1280@2x.jpg 2x, ./assets/images/beam-web/ship-in-hours-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/beam-web/ship-in-hours-896@2x.jpg 2x, ./assets/images/beam-web/ship-in-hours-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/beam-web/ship-in-hours-576@2x.jpg 2x, ./assets/images/beam-web/ship-in-hours-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/beam-web/ship-in-hours-1280@2x.jpg"
+                alt="Screenshot of the hero of the Beam landing page" class="project-card__img" loading="lazy"
+                width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--beam">
+            <picture>
+              <source srcset="./assets/images/beam-web/plans-800@2x.jpg 2x, ./assets/images/beam-web/plans-800.jpg" />
+              <img src="./assets/images/beam-web/plans-800@2x.jpg" alt="Screenshot of usage feature in Beam dashboard"
+                class="project-card__img" loading="lazy" width="800" height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--beam">
+            <picture>
+              <source srcset="./assets/images/beam-web/cta-800@2x.jpg 2x, ./assets/images/beam-web/cta-800.jpg" />
+              <img src="./assets/images/beam-web/cta-800@2x.jpg" alt="Screenshot of usage feature in Beam dashboard"
+                class="project-card__img" loading="lazy" width="800" height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--beam">
+            <picture>
+              <source
+                srcset="./assets/images/beam-web/pricing-1280@2x.jpg 2x, ./assets/images/beam-web/pricing-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source srcset="./assets/images/beam-web/pricing-896@2x.jpg 2x, ./assets/images/beam-web/pricing-896.jpg"
+                media="(min-width: 640px)" />
+              <source srcset="./assets/images/beam-web/pricing-576@2x.jpg 2x, ./assets/images/beam-web/pricing-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/beam-web/pricing-1280@2x.jpg"
+                alt="Screenshot of the hero of the Beam landing page" class="project-card__img" loading="lazy"
+                width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--link project-card--beam">
+            <p class="project-card__heading">View live</p>
+            <a href="https://beam.cloud/" target="_blank" rel="nofollow" class="styled-link">
+              <span class="styled-link__arrow">-&gt;</span>
+              <span class="styled-link__text">beam.cloud</span> </a>
+          </div>
+        </div>
+
+        <!-- Tantl -->
+        <div class="project" data-project-name="Tantl" data-project-type="Product Design" data-project-year="2023">
+          <div class="project-card project-card--tantl">
+            <picture>
+              <source srcset="./assets/images/tantl/questions-1280@2x.jpg 2x, ./assets/images/tantl/questions-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source srcset="./assets/images/tantl/questions-896@2x.jpg 2x, ./assets/images/tantl/questions-896.jpg"
+                media="(min-width: 640px)" />
+              <source srcset="./assets/images/tantl/questions-576@2x.jpg 2x, ./assets/images/tantl/questions-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/tantl/questions-1280@2x.jpg"
+                alt="Screenshot of the questions feature in the Tantl dashboard" class="project-card__img"
+                loading="lazy" width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-left project-card--tantl">
+            <picture>
+              <source srcset="./assets/images/tantl/tables-800@2x.jpg 2x, ./assets/images/tantl/tables-800.jpg" />
+              <img src="./assets/images/tantl/tables-800@2x.jpg" alt="Screenshot of tables toolbar in Tantl dashboard"
+                class="project-card__img" loading="lazy" width="800" height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--about project-card--half project-card--tantl">
+            <div>
+              <p class="project-card__heading">About</p>
+              <p class="project-card__text">Tantl (YC S21) helps companies to make their data warehouses accessible and
+                actionable with natural language. They reached out to me to help them design and shape their product
+                after a pivot.</p>
+            </div>
+            <div>
+              <p class="project-card__heading">Type</p>
+              <p class="project-card__text">Product Design</p>
+            </div>
+            <div>
+              <p class="project-card__heading">Year</p>
+              <p class="project-card__text">2023</p>
+            </div>
+          </div>
+          <div class="project-card project-card--tantl">
+            <picture>
+              <source
+                srcset="./assets/images/tantl/playground-1280@2x.jpg 2x, ./assets/images/tantl/playground-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source srcset="./assets/images/tantl/playground-896@2x.jpg 2x, ./assets/images/tantl/playground-896.jpg"
+                media="(min-width: 640px)" />
+              <source srcset="./assets/images/tantl/playground-576@2x.jpg 2x, ./assets/images/tantl/playground-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/tantl/playground-1280@2x.jpg"
+                alt="Screenshot of the playground feature in the Tantl dashboard" class="project-card__img"
+                loading="lazy" width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--quote project-card--half project-card--tantl">
+            <p class="project-card__text">“Jonas has a knack for taking rough concepts and honing them into intuitive
+              designs. He brings an experienced and opinionated approach, and he's not afraid to push back on requests
+              that don't champion the user. With him we can be confident that every project isn't just functional, but
+              feels alive and user-focused.”</p>
+            <div>
+              <p class="project-card__author">Carl Atupem</p>
+              <p class="project-card__job">Co-Founder & CTO @ Tantl</p>
+            </div>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-left project-card--tantl">
+            <picture>
+              <source
+                srcset="./assets/images/tantl/resource-dropdown-800@2x.jpg 2x, ./assets/images/tantl/resource-dropdown-800.jpg" />
+              <img src="./assets/images/tantl/resource-dropdown-800@2x.jpg"
+                alt="Screenshot of tables toolbar in Tantl dashboard" class="project-card__img" loading="lazy"
+                width="800" height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--tantl">
+            <picture>
+              <source
+                srcset="./assets/images/tantl/resource-settings-1280@2x.jpg 2x, ./assets/images/tantl/resource-settings-1280.jpg"
+                media="(min-width: 1024px)" />
+              <source
+                srcset="./assets/images/tantl/resource-settings-896@2x.jpg 2x, ./assets/images/tantl/resource-settings-896.jpg"
+                media="(min-width: 640px)" />
+              <source
+                srcset="./assets/images/tantl/resource-settings-576@2x.jpg 2x, ./assets/images/tantl/resource-settings-576.jpg"
+                media="(max-width: 640px)" />
+              <img src="./assets/images/tantl/design system-1280@2x.jpg" alt="Screenshot of the Tantl design system"
+                class="project-card__img" loading="lazy" width="1280" height="768">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--tantl">
+            <picture>
+              <source
+                srcset="./assets/images/tantl/copilot-access-800@2x.jpg 2x, ./assets/images/tantl/copilot-access-800.jpg" />
+              <img src="./assets/images/tantl/copilot-access-800@2x.jpg"
+                alt="Screenshot of resource dropdown in Tantl dashboard" class="project-card__img" loading="lazy"
+                width="800" height="480">
+            </picture>
+          </div>
+          <div class="project-card project-card--half project-card--overflow-right project-card--tantl">
+            <picture>
+              <source srcset="./assets/images/tantl/alert-800@2x.jpg 2x, ./assets/images/tantl/alert-800.jpg" />
+              <img src="./assets/images/tantl/alert-800@2x.jpg" alt="Screenshot of alert feature in Tantl dashboard"
+                class="project-card__img" loading="lazy" width="800" height="480">
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contact">
+      <div class="container">
+        <h2>Want to talk?</h2>
         <p>
-          <a href="mailto:hello@jonasbrinkhoff.com?">
-            <span class="arrow">-></span>
-            <span class="text">hello@jonasbrinkhoff.com</span>
+          <a href="mailto:hello@jonasbrinkhoff.com?" class="styled-link">
+            <span class="styled-link__arrow">-&gt;</span>
+            <span class="styled-link__text">hello@jonasbrinkhoff.com</span>
           </a>
         </p>
         <p>
-          <a
-            href="https://dribbble.com/jonasbrinkhoff"
-            target="_blank"
-            rel="nofollow"
-          >
-            <span class="arrow">-></span>
-            <span class="text">Dribbble</span> </a
-          >,
-          <a
-            href="https://www.linkedin.com/in/jonas-brinkhoff/"
-            target="_blank"
-            rel="nofollow"
-          >
-            <span class="arrow">-></span>
-            <span class="text">LinkedIn</span> </a
-          >,
-          <a
-            href="https://twitter.com/jonasbrinkhoff"
-            target="_blank"
-            rel="nofollow"
-          >
-            <span class="arrow">-></span>
-            <span class="text">Twitter</span>
+          <a href="https://dribbble.com/jonasbrinkhoff" target="_blank" rel="nofollow" class="styled-link">
+            <span class="styled-link__arrow">-&gt;</span>
+            <span class="styled-link__text">Dribbble</span> </a>
+          <a href="https://www.linkedin.com/in/jonas-brinkhoff/" target="_blank" rel="nofollow" class="styled-link">
+            <span class="styled-link__arrow">-&gt;</span>
+            <span class="styled-link__text">LinkedIn</span> </a>
+          <a href="https://twitter.com/jonasbrinkhoff" target="_blank" rel="nofollow" class="styled-link">
+            <span class="styled-link__arrow">-&gt;</span>
+            <span class="styled-link__text">Twitter</span>
           </a>
         </p>
-      </footer>
-    </main>
-  </body>
+
+      </div>
+    </footer>
+    <div class="island island--hidden">
+      <span class="island__project-name">Beam</span>
+      <span class="island__project-type">Product Design</span>
+      <span class="island__project-year">2023</span>
+    </div>
+  </main>
+
+  <script>
+    // Counter
+    const counter = document.querySelector(".counter__number")
+
+    const animate = () => {
+      const value = parseInt(counter.innerText)
+      if (value < 100) {
+        counter.innerText = value + 1
+        setTimeout(animate, 1000 - Math.min(Math.log(value) ** 8, 900 + value))
+      } else {
+        counter.innerText = 100
+      }
+
+      if (value === 9) {
+        counter.style.width = "32px"
+      }
+      if (value === 99) {
+        counter.style.width = "48px"
+      }
+    }
+
+    setTimeout(animate, 2000)
+
+    // Dynamic Island
+
+    const hero = document.querySelector(".hero")
+
+    let heroObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.querySelector(".island").classList.add("island--hidden")
+        } else {
+          document.querySelector(".island").classList.remove("island--hidden")
+        }
+      })
+    }, { threshold: 0.8 })
+
+    heroObserver.observe(hero)
+
+    const projects = [...document.querySelectorAll('.project')]
+
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.querySelector(".island-project-name").textContent = entry.target.dataset.projectName
+          document.querySelector(".island-project-type").textContent = entry.target.dataset.projectType
+          document.querySelector(".island-project-year").textContent = entry.target.dataset.projectYear
+        }
+      });
+    };
+
+    const options = {
+      threshold: 0.1,
+    };
+
+    let projectsObserver = new IntersectionObserver(callback, options);
+    projects.map((project) => {
+      projectsObserver.observe(project);
+    })
+
+    const footer = document.querySelector("footer")
+
+    let footerObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          document.querySelector(".island").classList.add("island--hidden")
+        } else {
+          document.querySelector(".island").classList.remove("island--hidden")
+        }
+      })
+    }, { threshold: 0.1 })
+
+    footerObserver.observe(footer)
+  </script>
+  <script data-goatcounter="https://jonasbrinkhoff.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+
 </html>

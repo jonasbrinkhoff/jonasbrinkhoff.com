@@ -560,7 +560,7 @@
     <div class="island island--hidden">
       <span class="island__project-name">Beam</span>
       <span class="island__project-type">Product Design</span>
-      <span class="island__project-year">2023</span>
+      <span class="island__project-year">2022 – Present</span>
     </div>
   </main>
 
@@ -589,24 +589,11 @@
 
     // Dynamic Island
 
-    const hero = document.querySelector(".hero")
-
-    let heroObserver = new IntersectionObserver((entries, observer) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          document.querySelector(".island").classList.add("island--hidden")
-        } else {
-          document.querySelector(".island").classList.remove("island--hidden")
-        }
-      })
-    }, { threshold: 0.8 })
-
-    heroObserver.observe(hero)
-
     const projects = [...document.querySelectorAll('.project')]
 
     const callback = (entries, observer) => {
       entries.forEach((entry) => {
+        console.log("Projects", entry.isIntersecting)
         if (entry.isIntersecting) {
           document.querySelector(".island__project-name").textContent = entry.target.dataset.projectName
           document.querySelector(".island__project-type").textContent = entry.target.dataset.projectType
@@ -628,6 +615,7 @@
 
     let footerObserver = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
+        console.log("Footer", entry.isIntersecting)
         if (entry.isIntersecting) {
           document.querySelector(".island").classList.add("island--hidden")
         } else {
@@ -637,6 +625,21 @@
     }, { threshold: 0.1 })
 
     footerObserver.observe(footer)
+
+    const hero = document.querySelector(".hero")
+
+    let heroObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach((entry) => {
+        console.log("Hero", entry.isIntersecting)
+        if (entry.isIntersecting) {
+          document.querySelector(".island").classList.add("island--hidden")
+        } else {
+          document.querySelector(".island").classList.remove("island--hidden")
+        }
+      })
+    }, { threshold: 1 })
+
+    heroObserver.observe(hero)
   </script>
   <script data-goatcounter="https://jonasbrinkhoff.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
